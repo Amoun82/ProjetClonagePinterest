@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Clonage site</title>
+</head>
+<body>
+
+    <!-- nav barre -->
+    <nav class="sticky-md-top sticky-lg-top bg-white navbar navbar-expand-md navbar-expand-lg navbar-light d-flex flex-lg-row flex-md-column justify-content-between" id="affichageMenu">
+                    
+        <div class="" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-p text-white bg-danger rounded-circle p-1"></i> <strong>Business</strong>
+                    </a>
+                            
+                    <ul class="dropdown-menu bordureArrondie">
+                        <li><a class="dropdown-item" href="index.html">Business HUB</a></li>
+                        <li><a class="dropdown-item" href="#">Page d'accueil</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Créer</strong>
+                    </a>
+                            
+                    <ul class="dropdown-menu bordureArrondie">
+                        <li><a class="dropdown-item" href="#">Créer une Épingle Idée</a></li>
+                        <li><a class="dropdown-item" href="pageCreerUneEpingle.html">Créer une Épingle</a></li>
+                        <li><a class="dropdown-item" href="PageCreerUneAnnonce.html">Créer une annonce</a></li>
+                                
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Analytics</strong>
+                    </a>
+                            
+                    <ul class="dropdown-menu bordureArrondie">
+                        <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                        <li><a class="dropdown-item" href="#">Audience Insights</a></li>
+                        <li><a class="dropdown-item" href="#">Conversion Insights</a></li>
+                        <li><a class="dropdown-item" href="#">Vidéo</a></li>
+                        <li><a class="dropdown-item" href="#">Tendance</a></li>
+                                
+                    </ul>
+                </li>
+                        
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Annonce</strong>
+                    </a>
+                    
+                    <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-start">
+                        <li><a class="dropdown-item" href="creerUneAnnonce.html">Créer une annonce</a></li>
+                        <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                        <li><a class="dropdown-item" href="#">Informations</a></li>
+                        <li><a class="dropdown-item" href="#">Rapports personnalisés</a></li>
+                        <li><a class="dropdown-item" href="#">Modifications groupées</a></li>
+                        <li><a class="dropdown-item" href="#">Conversions</a></li>
+                        <li><a class="dropdown-item" href="#">Audiences</a></li>
+                        <li><a class="dropdown-item" href="#">Historique de compte annonceur</a></li>
+                        <li><a class="dropdown-item" href="#">Facturation</a></li>
+                        <li><a class="dropdown-item" href="pageCatalogue.html">Catalogues</a></li>
+                        <li><a class="dropdown-item" href="#">Recommandations</a></li>
+                    </ul>
+                </li>
+                        
+            </ul>
+        </div>
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn menu" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2">
+
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                            
+                    <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Toutes les mises à jour</a></li>
+                        <p class="">
+                            Rien à voir ici (pour le moment) ! Explorez votre page d'accueil,<br> créez un tableau ou abonnez-vous à une personne<br> dont les idées vous inspireront.
+                        </p>
+                        <li><a class="dropdown-item" href="#">Accéder à la page d'accueil</a></li>
+                    </ul>
+                </li>
+            
+                    
+            
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                            
+                    <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Boîte de réception</a></li>
+                        <p>Partagez des idées avec vos amis</p>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-search"></i>Recherche par nom ou e-mail</a></li>
+                    </ul>
+                </li>
+            
+
+                <a class="nav-link text-body" href="pagePseudo.html">
+                    pseudo
+                </a>
+           
+
+           
+                <li class="nav-item dropdown">
+                    <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            
+                    <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-end">
+                        actuellement connecté
+                        <li><a class="dropdown-item d-flex" href="#">
+                            <h2>Lettre</h2>
+                            <div>
+                                <strong>pseudo</strong><br>
+                                professionnel<br>
+                                adresse mail
+                            </div>
+
+                        </a></li>
+
+                        Vos comptes
+                        <li><a class="dropdown-item" href="#"><strong>Ajouter un compte</strong></a></li>
+                        plus d'options
+                        <li><a class="dropdown-item" href="#"><strong>Paramètres</strong></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Business Access</strong></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Personnalisé votre page d'acceuil</strong></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Aide pour les annonces</strong> <i class="fas fa-external-link-square"></i></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Solliciter une fonctionnalité</strong> <i class="fas fa-external-link-square"></i></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Obtenir de l'aide</strong> <i class="fas fa-external-link-square"></i></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Voir les règles de<br>confidentialité et conditions<br>d'utilisation</strong> <i class="fas fa-external-link-square"></i></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Se déconnecter</strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+               
+        </div>
+    </nav>
+
+    <main class="d-flex flex-column align-items-center">
+
+        
+        <div class="d-flex flex-column align-items-center mb-4">
+            <div class="fondCouleurCreerEpingle bordureArrondie tailleCouverture d-flex flex-column align-items-center mb-5">
+                <button class="bordureArrondie border-0 fw-bolder" id="boutonPagePseudo">Ajouter une couverture</button>
+                <a class="LettrePseudo d-flex justify-content-center align-items-center rounded-circle" href="#">
+                    L
+                </a>    
+            </div>
+            
+            <div class="mt-4 fs-1 fw-bold mb-2">
+                pseudo
+            </div>
+            <div class="fw-light mb-2">
+                @pseudo
+            </div>
+            <div class="mb-2">
+                0  abonnement (s)
+            </div>
+           
+            <div>
+                <button class="bordureArrondie boutonPagePseudo border-0 fw-bolder">Partager</button>
+                
+                <button class="bordureArrondie boutonPagePseudo border-0 fw-bolder">Modifier le profil</button>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center w-100 mt-2">
+            <div class="d-flex">
+                <div class="me-3 fw-bold simulationBtn" id="eltCrees">
+                    Créés
+                </div>
+                <div class="ms-3 fw-bold ecritureSousLigné" id="eltEnregistrer">
+                    Enregistrés
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center w-100" id="divAFaireDisparaitre">
+                <div class="d-flex justify-content-between w-100 mb-5">
+                    <div class="btn-group dropend fs-3 ms-2 rounded-circle">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gears"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><span class="dropdown-item-text">Trier par</span></li>
+                            <li><a class="dropdown-item" href="#">De A à Z</a></li>
+                            <li><a class="dropdown-item" href="#">Personnalisé</a></li>
+                            <li><a class="dropdown-item" href="#">Dernier enregistrement</a></li>
+                            <li><span class="dropdown-item-text">Mise en page du profil</span></li>
+                            <li><a class="dropdown-item" href="#">Modifier la visibilité des tableaux</a></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="btn-group dropstart fs-3 me-2 rounded-circle">
+                        <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><span class="dropdown-item-text">Créer</span></li>
+                            <li><a class="dropdown-item" href="#">Épingle</a></li>
+                            <li><a class="dropdown-item" href="#">Épingle Idée</a></li>
+                            <li><a class="dropdown-item" href="#">Tableau</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center mt-5 mb-2">
+                    <p>Vous n'avez pas encore enregistré d'Épingle pour le moment</p>
+                    <button class="bordureArrondie boutonPagePseudo border-0 fw-bolder w-50">Rechercher des idées</button>
+                </div>
+            </div>
+
+            <div class="desactiver" id="divAFaireApparaitre">
+                <p class="h1">Inspirez les autres avec une Épingle Idée</p>
+                <button class="bordureArrondie border-0 text-white boutonHauteurPageAnnonce fw-bolder" id="boutonCreer" type="button">Créer</button>
+            </div>
+
+        </div>
+        
+        <!-- le menu du footer -->
+        <footer class="px-5 my-5 fixed-bottom d-flex flex-lg-row justify-content-md-end justify-content-lg-end" id="menuBas">
+            <div class="dropdown dropup">
+                <a class="border-0 btn rounded-circle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-question"></i>
+                </a>
+                    
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#"><strong>Consulter le centre d'aide</strong><i class="fas fa-external-link-square-alt"></i></a></li>
+                    <li><a class="dropdown-item border-bottom d-flex justify-content-between" href="#"><strong>Créer un widget</strong><i class="fas fa-external-link-square-alt"></i></a></li>
+                    <li class="p-2">
+                        <a class="liensFooter" href="#">À propos</a>
+                        <a class="liensFooter" href="#">Blog</a>
+                        <a class="liensFooter" href="#">Professionnels</a>
+                        <a class="liensFooter" href="#">Recrutement</a>
+                        <a class="liensFooter" href="#">Développeurs</a>
+                        <a class="liensFooter" href="#">Suppressions</a>
+                        <a class="liensFooter" href="#">Confidentialité</a>
+                        <a class="liensFooter" href="#">Annonces personnalisées</a>
+                        <a class="liensFooter" href="#">Conditions d'utilisation</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e74310d74.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="PagePseudo.js"></script>
+
+</body>
+</html>

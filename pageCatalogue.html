@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Clonage site</title>
+</head>
+<body>
+    <div class="container-fluid text-body d-flex flex-column align-items-center">
+        
+        <!-- nav barre -->
+        <nav class="sticky-md-top sticky-lg-top bg-white navbar navbar-expand-md navbar-expand-lg navbar-light d-flex flex-lg-row flex-md-column justify-content-between font-weight-bold w-100" id="affichageMenu">
+                            
+            <div class="" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-p text-white bg-danger rounded-circle p-1"></i> <strong>Business</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="index.html">Business HUB</a></li>
+                            <li><a class="dropdown-item" href="#">Page d'accueil</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown bordureArrondie">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Créer</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="#">Créer une Épingle Idée</a></li>
+                            <li><a class="dropdown-item" href="pageCreerUneEpingle.html">Créer une Épingle</a></li>
+                            <li><a class="dropdown-item" href="PageCreerUneAnnonce.html">Créer une annonce</a></li>
+                                    
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Analytics</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                            <li><a class="dropdown-item" href="#">Audience Insights</a></li>
+                            <li><a class="dropdown-item" href="#">Conversion Insights</a></li>
+                            <li><a class="dropdown-item" href="#">Vidéo</a></li>
+                            <li><a class="dropdown-item" href="#">Tendance</a></li>
+                                    
+                        </ul>
+                    </li>
+                            
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Annonce</strong>
+                        </a>
+                        
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="creerUneAnnonce.html">Créer une annonce</a></li>
+                            <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                            <li><a class="dropdown-item" href="#">Informations</a></li>
+                            <li><a class="dropdown-item" href="#">Rapports personnalisés</a></li>
+                            <li><a class="dropdown-item" href="#">Modifications groupées</a></li>
+                            <li><a class="dropdown-item" href="#">Conversions</a></li>
+                            <li><a class="dropdown-item" href="#">Audiences</a></li>
+                            <li><a class="dropdown-item" href="#">Historique de compte annonceur</a></li>
+                            <li><a class="dropdown-item" href="#">Facturation</a></li>
+                            <li><a class="dropdown-item" href="pageCatalogue.html">Catalogues</a></li>
+                            <li><a class="dropdown-item" href="#">Recommandations</a></li>
+                        </ul>
+                    </li>
+
+                    <div class="btn-group">
+                        <button class="btn bordureArrondie fw-bold dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Vous consultez actuellement : Pseudo
+                        </button>
+        
+                        <ul class="dropdown-menu bordureArrondie active p-2" aria-labelledby="dropdownMenuClickableInside">
+                            <div class="d-flex bordureArrondie fondMenuPseudoSombre p-1">
+                                <button class="bordureArrondie border-0 fw-bold fondMenuPseudoClair" id="boutonCompte">Vos comptes publicitaires</button>
+                                <button class="bordureArrondie border-0 fw-bold fondMenuPseudoSombre" id="boutonPartage">Partagés avec vous</button>
+                            </div>
+                            <div id="menuPseudoPremier">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <div>
+                                        <h5 class="fw-bold">Pseudo</h5>
+                                        <small>numero de serie</small>
+                                    </div>
+                                    <div><i class="fas fa-check"></i></div>
+                                </div>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="fw-bold" href="#">Gérer Business Access</a>
+                                </div>
+                            </div>
+
+                            <div class="desactiver py-3" id="menuPseudoSecond" >
+                                Vous n'avez été ajouté(e) à aucun compte publicitaire
+                            </div>
+                        </ul>
+                    </div>
+                            
+                </ul>
+            </div>
+
+            <div class="" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2">
+
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Toutes les mises à jour</a></li>
+                            <p class="">
+                                Rien à voir ici (pour le moment) ! Explorez votre page d'accueil,<br> créez un tableau ou abonnez-vous à une personne<br> dont les idées vous inspireront.
+                            </p>
+                            <li><a class="dropdown-item" href="#">Accéder à la page d'accueil</a></li>
+                        </ul>
+                    </li>
+                
+                        
+                
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Boîte de réception</a></li>
+                            <p>Partagez des idées avec vos amis</p>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-search"></i>Recherche par nom ou e-mail</a></li>
+                        </ul>
+                    </li>
+                
+
+                    <a class="nav-link text-body" href="pagePseudo.html">
+                        pseudo
+                    </a>
+            
+
+            
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-end">
+                            actuellement connecté
+                            <li><a class="dropdown-item d-flex" href="#">
+                                <h2>Lettre</h2>
+                                <div>
+                                    <strong>pseudo</strong><br>
+                                    professionnel<br>
+                                    adresse mail
+                                </div>
+
+                            </a></li>
+
+                            Vos comptes
+                            <li><a class="dropdown-item" href="#"><strong>Ajouter un compte</strong></a></li>
+                            plus d'options
+                            <li><a class="dropdown-item" href="#"><strong>Paramètres</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Business Access</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Personnalisé votre page d'acceuil</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Aide pour les annonces</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Solliciter une fonctionnalité</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Obtenir de l'aide</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Voir les règles de<br>confidentialité et conditions<br>d'utilisation</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Se déconnecter</strong></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <main class="w-100">
+
+            <!-- rangee icone grosse -->
+            <div class="d-flex m-3">
+                <div class="display-4 mx-1 fondIcone rounded-circle p-3">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="d-flex flex-column mx-1 p-3">
+
+                    <h3 class="fw-bold h3">Catalogues</h3>
+                    <a href="#" class="fw-bold" id="decorationLink">En savoir plus</a>
+
+                </div>
+            </div>
+            
+            <!-- encadré bleu -->
+            <div class="bg-primary d-flex m-3 bordureArrondie mb-5">
+                <div class="w-50 p-4 px-5">
+                    <h3 class="fw-bold text-white h2">Revendiquer un site Web</h3>
+
+                    <p class="text-white">
+                        Ajoutez une balise meta à votre site pour débloquer les catalogues Pinterest, obtenir des crédits pour les articles que vous vendez et créer des Épingles Produits.
+                        <br><a class="text-white fw-bold" href="#">En savoir plus</a>
+                    </p>
+                </div>    
+                <div class="d-flex w-50 justify-content-center align-items-center">
+                    <input class="w-50 hauteurinput bordureArrondie ps-3" type="text" name="" placeholder="Par ex. : www.red-shoes-online.com" id="inputEncadrerBleu">
+
+                    <button class="fw-bold ms-2 rounded-pill border-0 text-muted px-3" type="button" id="bouttonPageCatalogue" disabled>Revendiquer maintenant</button>
+                </div>
+            </div>
+            
+
+            <!-- le formulaire complexe -->
+            <div class="m-3 shadow p-3 bordureArrondie mb-5">
+                <form class="d-flex flex-column p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="fw-bold">Nouvelle source de données</h3>
+                        </div>
+                        <div class="me-2 rounded-circle fondIcone p-2">
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex py-3">
+                            <div class="d-flex flex-column me-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Nom</label>
+                                <input class="bordureArrondie hauteurinput border-0 ps-3" type="text" name="" placeholder="Donnez un nom à votre page d'accueil" id="" disabled>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Le nom unique du profil de votre page d'accueil permettant de l'identifier
+                                </small>
+                            </div>
+
+                            <div class="d-flex flex-column ms-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">URL de la page de produits</label>
+                                <input class="bordureArrondie hauteurinput border-0 ps-3" type="text" name="" placeholder="Associer à un fichier .csv, .tsv ou .xml" id="" disabled>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Hébergé sur un site externe contenant des métadonnées formatées en anglais
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex py-3">
+                            <div class="d-flex flex-column me-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Format de fichier</label>
+                                <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                    <option selected>CSV</option>
+                                </select>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Format de fichier
+                                </small>
+
+                            </div>
+
+                            <div class="d-flex flex-column ms-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Disponibilité par défaut</label>
+                                <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                    <option selected>AUCUN</option>
+                                </select>
+
+                                <small class="personnalisationSmall mt-2">
+                                    La disponibilité des produits de votre source de données ne présentant pas de valeur seront définis par défaut sur cette disponibilité
+                                </small>
+
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex py-3">
+                            <div class="d-flex flex-column me-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Détails de connexion à la page de produits (facultatif)</label>
+                                <input class="bordureArrondie hauteurinput border-0 ps-3" type="text" name="" placeholder="Nom d'utilisateur" id="" disabled>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Saisissez le nom d'utilisateur et le mot de passe des URL protégées par un mot de passe
+                                </small>
+                            </div>
+                            <div class="d-flex flex-column ms-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Détails de connexion à la page de produits (facultatif)</label>
+                                <input class="bordureArrondie hauteurinput border-0 ps-3" type="text" name="" placeholder="Mot de passe" id="" disabled>
+                            </div>
+                        </div>
+
+                        
+                        <div class="d-flex py-3">
+                            <div class="d-flex flex-column me-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Pays/Région</label>
+                                <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                    <option selected>États-Unis</option>
+                                </select>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Le pays ou la région d'où vos produits sont expédiés
+                                </small>
+                            </div>
+                            <div class="d-flex flex-column ms-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Langue</label>
+                                <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                    <option selected>English (US)</option>
+                                </select>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Langue du contenu de votre source de données
+                                </small>
+                            </div>
+                        </div>
+                       
+                        <div class="d-flex py-3">
+                            <div class="d-flex flex-column me-5 personnalisationParticuliere">
+                                <label class="personnalisationLabel mb-2" for="">Devise par défaut</label>
+                                <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                    <option selected>USD - Dollar américain</option>
+                                </select>
+                                
+                                <small class="personnalisationSmall mt-2">
+                                    Les prix des produits figurant dans votre source de données sans code de devise ISO seront exprimés dans cette devise par défaut, quel que soit le lieu de vente ou d'expédition de vos produits.
+                                </small>
+                            </div>
+                            <div class="d-flex flex-column ms-5 personnalisationParticuliere">
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column me-2 w-25">
+                                        <label class="personnalisationLabel mb-2" for="">Heure</label>
+                                        <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                            <option selected>--:--</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-column ms-2 w-75">
+                                        <label class="personnalisationLabel mb-2" for="">Fuseau horaire</label>
+                                        <select class="form-select bordureArrondie border-0 hauteurinput ps-3" aria-label="Disabled select example" disabled>
+                                            <option selected>Choisir un fuseau horaire</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+        
+                                <small class="personnalisationSmall mt-2">
+                                    Sélectionnez l'heure à laquelle vous souhaitez que votre page d'accueil soit ingérée (facultatif)
+                                </small>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+
+                </form>
+                <div class="d-flex p-3">
+                    <div class="d-flex align-items-center w-100">
+                        <p class="personnalisationSmall">
+                            En cliquant sur « Créer des Épingles », vous pourrez publier des Épingles pour votre catalogue, qui seront soumises aux <a href="#">Conditions d'utilisation commerciale</a>, <a href="#">Guide pour la communauté</a> et <a href="#">Guide pour les commerçants</a> de Pinterest.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center w-25">
+                        <button class="rounded-pill me-2 fw-bold hauteurBouton border-0" id="boutonTesterProduit">Tester ma page de produits</button>
+
+                        <button class="rounded-pill ms-2 fw-bold hauteurBouton border-0" id="boutonCreerEpingle" disabled>Créer des Épingles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bas de page du formulaire -->
+            <div class="m-3">
+                <h3 class="fw-bold mb-3">Vous avez besoin d'aide ?</h3>
+                <p>
+                    Découvrez des conseils et des bonnes pratiques sur le <a href="#" class="fw-bold decorationLink">Site Pinterest Business</a>
+                </p>
+                <p>
+                    Résolvez les problèmes rencontrés grâce au <a href="#" class="fw-bold decorationLink">Centre d'aide Pinterest</a>
+                </p>
+            </div>
+
+        </main>
+        
+
+    </div>
+
+
+    <script type="text/javascript" src="creerUneAnnonce.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e74310d74.js" crossorigin="anonymous"></script>    
+</body>
+</html>

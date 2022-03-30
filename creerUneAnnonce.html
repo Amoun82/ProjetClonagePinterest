@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Clonage site</title>
+</head>
+<body>
+    <div class="container-fluid text-body d-flex flex-column align-items-center">
+        
+        <!-- nav barre -->
+        <nav class="sticky-md-top sticky-lg-top bg-white navbar navbar-expand-md navbar-expand-lg navbar-light d-flex flex-lg-row flex-md-column justify-content-between font-weight-bold w-100" id="affichageMenu">
+                            
+            <div class="" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-p text-white bg-danger rounded-circle p-1"></i> <strong>Business</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="index.html">Business HUB</a></li>
+                            <li><a class="dropdown-item" href="#">Page d'accueil</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Créer</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="#">Créer une Épingle Idée</a></li>
+                            <li><a class="dropdown-item" href="pageCreerUneEpingle.html">Créer une Épingle</a></li>
+                            <li><a class="dropdown-item" href="PageCreerUneAnnonce.html">Créer une annonce</a></li>
+                                    
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Analytics</strong>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie">
+                            <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                            <li><a class="dropdown-item" href="#">Audience Insights</a></li>
+                            <li><a class="dropdown-item" href="#">Conversion Insights</a></li>
+                            <li><a class="dropdown-item" href="#">Vidéo</a></li>
+                            <li><a class="dropdown-item" href="#">Tendance</a></li>
+                                    
+                        </ul>
+                    </li>
+                            
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Annonce</strong>
+                        </a>
+                        
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="creerUneAnnonce.html">Créer une annonce</a></li>
+                            <li><a class="dropdown-item" href="#">Aperçu</a></li>
+                            <li><a class="dropdown-item" href="#">Informations</a></li>
+                            <li><a class="dropdown-item" href="#">Rapports personnalisés</a></li>
+                            <li><a class="dropdown-item" href="#">Modifications groupées</a></li>
+                            <li><a class="dropdown-item" href="#">Conversions</a></li>
+                            <li><a class="dropdown-item" href="#">Audiences</a></li>
+                            <li><a class="dropdown-item" href="#">Historique de compte annonceur</a></li>
+                            <li><a class="dropdown-item" href="#">Facturation</a></li>
+                            <li><a class="dropdown-item" href="pageCatalogue.html">Catalogues</a></li>
+                            <li><a class="dropdown-item" href="#">Recommandations</a></li>
+                        </ul>
+                    </li>
+
+                    
+                    <div class="btn-group">
+                        <button class="btn bordureArrondie fw-bold dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Vous consultez actuellement : Pseudo
+                        </button>
+        
+                        <ul class="dropdown-menu bordureArrondie active p-2" aria-labelledby="dropdownMenuClickableInside">
+                            <div class="d-flex bordureArrondie fondMenuPseudoSombre p-1">
+                                <button class="bordureArrondie border-0 fw-bold fondMenuPseudoClair" id="boutonCompte">Vos comptes publicitaires</button>
+                                <button class="bordureArrondie border-0 fw-bold fondMenuPseudoSombre" id="boutonPartage">Partagés avec vous</button>
+                            </div>
+                            <div id="menuPseudoPremier">
+                                <div class="d-flex justify-content-between align-items-center p-2">
+                                    <div>
+                                        <h5 class="fw-bold">Pseudo</h5>
+                                        <small>numero de serie</small>
+                                    </div>
+                                    <div><i class="fas fa-check"></i></div>
+                                </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button class="text-white bordureArrondie fw-bold border-0" id="creerNoueauComptePublicitaire">Créer un nouveau compte publicitaire</button>
+
+                                    <a class="fw-bold" href="#">Gérer Business Access</a>
+                                </div>
+                            </div>
+
+                            <div class="desactiver py-3" id="menuPseudoSecond" >
+                                Vous n'avez été ajouté(e) à aucun compte publicitaire
+                            </div>
+                        </ul>
+                    </div>
+                            
+                </ul>
+            </div>
+
+            <div class="" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2">
+
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Toutes les mises à jour</a></li>
+                            <p class="">
+                                Rien à voir ici (pour le moment) ! Explorez votre page d'accueil,<br> créez un tableau ou abonnez-vous à une personne<br> dont les idées vous inspireront.
+                            </p>
+                            <li><a class="dropdown-item" href="#">Accéder à la page d'accueil</a></li>
+                        </ul>
+                    </li>
+                
+                        
+                
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Boîte de réception</a></li>
+                            <p>Partagez des idées avec vos amis</p>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-search"></i>Recherche par nom ou e-mail</a></li>
+                        </ul>
+                    </li>
+                
+
+                    <a class="nav-link text-body" href="pagePseudo.html">
+                        pseudo
+                    </a>
+            
+
+            
+                    <li class="nav-item dropdown">
+                        <a class="menu nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                
+                        <ul class="dropdown-menu bordureArrondie dropdown-menu-md-end dropdown-menu-lg-end">
+                            actuellement connecté
+                            <li><a class="dropdown-item d-flex" href="#">
+                                <h2>Lettre</h2>
+                                <div>
+                                    <strong>pseudo</strong><br>
+                                    professionnel<br>
+                                    adresse mail
+                                </div>
+
+                            </a></li>
+
+                            Vos comptes
+                            <li><a class="dropdown-item" href="#"><strong>Ajouter un compte</strong></a></li>
+                            plus d'options
+                            <li><a class="dropdown-item" href="#"><strong>Paramètres</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Business Access</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Personnalisé votre page d'acceuil</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Aide pour les annonces</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Solliciter une fonctionnalité</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Obtenir de l'aide</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Voir les règles de<br>confidentialité et conditions<br>d'utilisation</strong> <i class="fas fa-external-link-square"></i></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Se déconnecter</strong></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+
+        <!-- contenu principale -->
+        <main class="d-flex w-100">
+            <!-- colonne gestionnaire d'annonce -->
+            <div class="d-flex flex-column me-3 w-25">
+                <p class="h6">Gestionnaire d'annonces</p>
+                <div class="d-flex justify-content-between">
+                    <h1 class="h3">Créer une campagne</h1>
+                    <div class="pt-2 px-3 bgPointInterrogation rounded-circle"><i class="fas fa-question"></i></div>
+                </div>
+                <div class="h-50 overflow-scroll">
+                    <div class="d-flex flex-column shadow bordureArrondie p-2 h6">
+                        Campagne Intérêt, 1 groupe d'annonces
+                        2022-03-10 13:06 UTC | Intérêt (anciennement trafic)
+                        <button class="bordureArrondie border-0 fw-bolder boutonHauteurPageAnnonce" type="button">Nouveau groupe d'annonces</button>
+
+                        2022-03-10 13:06 UTC | Groupe
+                    </div>
+                </div>
+
+                <button class="bordureArrondie border-0 text-white boutonHauteurPageAnnonce fw-bolder" id="boutonContinuer" type="button">Publier</button>
+            </div>
+            
+            <!-- partie centrale -->
+            <div class="d-flex flex-column ms-5 w-100">
+                <div class="d-flex justify-content-end w-100">    
+                    <div>
+                        <button class="bordureArrondie border-0 boutonHauteurPageAnnonce fw-bolder" onclick=window.location.href='pageCreerUneAnnonce.html'>Passer à la création d'une annonce en 3 étapes</button>
+                    </div>
+                </div>
+                
+                <!-- cadre selectionnez un objectif de campagne -->
+                <div class="w-75">
+                    <div class="d-flex">
+                        <h2 class="fw-bold me-2 h3">Sélectionnez un objectif de campagne</h2>
+                        <div class="pt-2 px-3 bgPointInterrogation rounded-circle"><i class="fas fa-question"></i></div>
+                    </div>
+                    <p>
+                        Votre objectif de campagne détermine la manière dont vous allez faire votre offre dans l'enchère d'annonce et les types de format d'annonce pouvant être sponsorisés. Choisissez l'objectif de campagne qui reflète le plus vos objectifs commerciaux.
+                    </p>
+                </div>
+
+                <!-- les petits encadrés -->
+                <div class="d-flex w-75">
+                    <div class="d-flex flex-column m-1">
+                        <h4 class="fw-bold">Développer la notoriété de votre marque</h4>
+
+                        <a class="shadow bordureArrondie my-2 p-2 petitsEncadres" href="#">
+                            <h5 class="fw-bold">Notoriété de marque</h5>
+
+                            <p>Aidez la communauté à découvrir votre marque, vos produits et vos autres services</p>
+                        </a>
+
+                        <a class="shadow bordureArrondie my-2 p-2 petitsEncadres" href="#">
+                            <h5 class="fw-bold">Vues de vidéo</h5>
+
+                            <p>Sponsorisez des vidéos afin d'inviter la communauté à découvrir votre marque ou de susciter des engagements sur votre site Web</p>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column m-1">
+                        
+                        <h4 class="fw-bold">Susciter de l'intérêt </h4>
+
+                        <a class="border border-dark shadow bordureArrondie my-2 p-2 petitsEncadres" href="#">
+                            <h5 class="fw-bold">Intérêt (anciennement trafic)</h5>
+                            <p>Incitez plus de personnes à cliquer sur votre annonce sur Pinterest</p>
+                        </a>
+
+                    </div>
+                    <div class="d-flex flex-column m-1">
+                    
+                        <h4 class="fw-bold">Obtenir des conversions</h4>
+                    
+                        <a class="shadow bordureArrondie my-2 p-2 petitsEncadres" href="#">
+                            <h5 class="fw-bold">Conversions</h5>
+                            <p>Suscitez des actions sur votre site Web</p>
+                        </a>
+
+                        <a class="shadow bordureArrondie my-2 p-2 petitsEncadres" href="#">
+                            <h5 class="fw-bold">Ventes par catalogue</h5>
+                            <p>Sponsorisez votre inventaire de produits avec des annonces shopping</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Détail de la campagne -->
+                <div class="mt-5">
+                    <div class="d-flex">
+                        <h2 class="fw-bold me-2 h3">Détails de la campagne</h2>
+                        <div class="pt-2 px-3 bgPointInterrogation rounded-circle"><i class="fas fa-question"></i></div>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <label for="">Nom de la campagne</label>
+                        <input class="mt-2 bordureArrondie border p-3 champTextPageAnnonce" type="text" placeholder="Nom de la campagne" value="2022-03-10 14:25 UTC | Intérêt (anciennement trafic)" name="" id="">
+                        <small>Vous seul(e) pouvez voir ce nom</small>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <h5>Statut de la campagne</h5>
+
+                        <div>
+                            <div>
+                                <input class="me-2" type="radio" name="diffusees" id=""><label for="">Actif (recommandé) Vos annonces peuvent être diffusées</label>
+                            </div>
+                            <div>
+                                <input class="me-2" type="radio" name="diffusees" id=""><label for="">En pause Vos annonces ne peuvent pas être diffusées</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!-- encadré bleu -->
+                <div class="w-75 mt-5">
+
+                    <div class="d-flex">
+                        <h2 class="fw-bold me-2 h3">Budget de campagne et calendrier</h2>
+                        <div class="pt-2 px-3 bgPointInterrogation rounded-circle"><i class="fas fa-question"></i></div>
+                    </div>
+
+                    <div class="d-flex justify-content-around bgEncadrebleu bordureArrondie">
+                        <div class="d-flex justify-content-center align-items-center m-2 display-6"><i class="fas fa-info-circle"></i></div>
+                        <div class="w-75 mt-4">
+                            <h4 class="fw-bold fs-4">Budgets de campagne pour l'objectif intérêt (anciennement trafic)</h4>
+                            <p class="mt-4 fs-6">
+                                L'objectif intérêt (anciennement trafic) entre désormais dans le budget au niveau de la campagne. Spécifiez simplement un budget de campagne et Pinterest répartira ce budget entre les différents groupes d'annonces.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="button" class="bordureArrondie border-0 boutonHauteurPageAnnonce fw-bolder bg-white" id="boutonEnSavoirPlus">En savoir plus</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- dernier ligne avant bouton continuer -->
+                <div class="mt-3">
+                    <div>Type de budget de la campagne</div>
+                   
+                    <div class="mt-2">
+                        <input class="me-2" type="radio" name="article" id=""><label for="">Quotidien</label>
+                    </div>
+
+                    <div class="mt-2">
+                        <input class="me-2" type="radio" name="article" id=""><label for="">Sur la durée globale</label>
+                    </div>
+
+                    <div class="mt-3 d-flex flex-column w-50">
+                        <label for="">Plafond de budget journalier (en EUR)</label>
+                        <input class="mt-2 bordureArrondie border p-3 champTextPageAnnonce" type="text" name="" placeholder="Exemple : 100,00 (facultatif)" id="">
+                        <small>Votre campagne ne peut dépasser plus de - par jour, quelque soit le groupe d'annonce.</small>
+                    </div>
+
+                    <div class="mt-3">Calendrier de la campagne</div>
+
+                    <div class="mt-2">
+                        <input class="me-2" type="radio" name="autre" id=""><label for="">Exécuter en continu</label>
+                    </div>
+                    <div class="mt-2">
+                        <input class="me-2" type="radio" name="autre" id=""><label for="">Exécuter à des dates précises</label>
+                    </div>
+
+
+                    
+                </div>
+
+                <button type="button" class="bordureArrondie border-0 w-25 my-5 boutonHauteurPageAnnonce fw-bolder" id="boutonContinuerPageAnnonce" >Continuer</button>
+
+                <footer>
+                    En utilisant les annonces Pinterest, y compris les fonctionnalités d'installation d'applications, vous acceptez nos <a class="lienCreerAnnonce" href="#"><strong>Règles publicitaires</strong></a> et nos <a class="lienCreerAnnonce" href="#"><strong>Conditions d'utilisation des données d'annonces</strong></a>, y compris nos <a class="lienCreerAnnonce" href="#"><strong>règles de ciblage</strong></a> pour les annonces concernant les crédits, les offres d'emploi et les annonces immobilières
+                </footer>
+
+            </div>
+
+            
+
+        </main>
+
+        
+
+
+    </div>
+
+    <script type="text/javascript" src="creerUneAnnonce.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e74310d74.js" crossorigin="anonymous"></script>
+</body>
+</html>

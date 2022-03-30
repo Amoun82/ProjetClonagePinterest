@@ -1,0 +1,612 @@
+/* mise en page des titres */
+h4{
+    font-size: 99%;
+}
+
+h3{
+    font-size: 99%;
+}
+
+h5{
+    font-size: 99%;
+}
+
+h2{
+    font-size:x-large;
+}
+
+.desactiver{
+    display: none;
+}
+
+/* effet sur les hover */
+div>div>a:hover,div>div>div>div>div>a:hover,main>div>a:hover{
+    color:black;
+}
+
+.troisPointEnSurvol:hover{
+    background-color:lightgray;
+    border-radius: 50%;
+}
+
+.fondHover:hover{
+    background-color:lightgray;
+    border-radius: 50%;
+}
+
+div>div>p>a:hover{
+    color:black ;
+    text-decoration: underline;
+}
+
+#rangeePseudo:hover{
+    text-decoration: underline;
+}
+
+.liensFooter:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+footer>div>a:hover{
+    background-color:lightgray ;
+}
+
+#dropdownMenuClickableInside:hover{
+    background-color: #d0d0d0;
+}
+
+/* couleur et effet des liens sur la page */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* sur la page index.html */
+/* couleur de l'écriture du menu */
+nav>div{
+    color: black;
+}
+
+div>nav>div>a{
+    color: black;
+}
+
+.menu:hover{
+    border-radius: 20px;
+    background-color: lightgray ;
+}
+
+#affichageMenu{
+    width: 100%;
+}
+
+/* rangée pseudo */
+#laRangeePseudo{
+    width: 100%;
+}
+
+
+/* la couleur du background, l'écriture et l'image dans le carousel */
+#bgCarousel{
+    background:antiquewhite;
+}
+
+.textCouleur{
+    color:darkorchid ;
+}
+
+img{
+    width: 400px;
+    height: 450px;
+}
+
+.taille{
+    height: 300px;
+    width: 500px;
+}
+
+.rangeeCarouselAccordin{
+    width: 75%;
+}
+
+
+/* la couleur background pour la rangé performance  */
+#perfomance{
+    background:ghostwhite;  
+    height: auto;
+    width: 75%;
+}
+
+.rangeeActifEnPauseNonDemarre{
+    width: 33.33%;
+}
+
+.redimensionRangeePerformance{
+    width: 25%;
+    height: auto;
+}
+
+
+/* rangée ressources pour faire les petites cases */
+.redimension{
+    font-size:99%;
+    height: 90px;
+}
+
+.carte{
+    width: 25%;
+}
+
+.disposition{
+    width: 75%;
+}
+
+
+/* alignement servant pour la rangée pseudo */
+#pseudo{
+    margin-left: 12%;
+}
+
+#zero{
+    margin-right: 12%;
+}
+
+
+/* dans le menu pied de page */
+footer>div>a{
+    background-color: white;
+}
+
+/* image dans les ressources */
+.fondImage{
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5BxfeMfhy40GB8n2GFHdOT/c8ba4477321db7544aee73bb2654dfa1/St.-Paddy_s-day_Thumb_.jpg?fit=fill&w=240&h=135&fm=webp");
+    opacity: 0.8;
+    color: white;
+}
+
+.fondImage:hover{
+    color: white;
+}
+
+/* rangee vous avez besoin */
+#derniereRangee{
+    width: 75%;
+}
+
+/* bordure arrondis */
+.bordureArrondie{
+    border-radius: 20px;
+}
+
+/* page créer une épingle.html */
+#petiteCaseScroll{
+    height: 250px;
+}
+
+#zoneEpingle{
+    height: 650px;
+    width: 880px;
+}
+
+.fondCouleurCreerEpingle{
+    background-color: #efefef;
+}
+
+#champText{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+#bordurePointille{
+    border: 2px dashed lightgray ;
+    padding-top: 200px;
+}
+
+#fondImage{
+    background:#efefef;
+    height: 510px;
+    width: 340px;
+}
+
+#champText:focus{
+    border-bottom: 1px solid blue;
+    outline: none;
+}
+
+#zoneTextCreerEpingle{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+#zoneTextCreerEpingle:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+.changementBoutonEnZone{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.changementBoutonEnZone:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+.boutonPourDesactiver{
+    background-color: #efefef;
+}
+
+/* classe du bouton qui seras agrandis */
+.boutonAAgrandir{
+    width:166.61px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* page creer une annonce */
+.lienCreerAnnonce:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#creerNoueauComptePublicitaire{
+    background-color: #e60023 ;
+    width: 280px;
+    height: 30px;
+}
+
+.petitsEncadres{
+    width: 350px;
+    height: 110px;
+}
+
+.bgPointInterrogation:hover,.boutonHauteurPageAnnonce:hover{
+    background-color: #d0d0d0;
+}
+
+.bgEncadrebleu{
+    background-color: rgb(235, 244, 254); ;
+    height: 189px;
+}
+
+#boutonEnSavoirPlus{
+    width: 135px;
+    height: 50px;
+}
+
+.fondMenuPseudoSombre{
+    background-color: #d0d0d0;
+}
+
+.fondMenuPseudoClair{
+    background-color: white;
+}
+
+.bgPointInterrogation{
+    background-color: #efefef;
+}
+
+#boutonContinuerPageAnnonce{
+    max-width: max-content;
+}
+
+.champTextPageAnnonce:focus{
+    outline: 4px solid rgb(0 132 255/.5) ;
+}
+
+.boutonHauteurPageAnnonce{
+    height: 40px;
+}
+
+#boutonContinuer{
+    background-color: #e60023;
+}
+
+#boutonContinuer:hover{
+    background-color: #a3081a;
+}
+
+#iconeAAgrandir{
+    font-size: larger;
+}
+
+.fondPageCreerUneAnnonce{
+    background-color: #efefef;
+}
+
+#fondPageCreerUneAnnonce{
+    width: 1900px;
+    height: 850px;
+}
+
+#BoutonPasserCreationAnnonce{
+    height: 40px;
+}
+
+#petitEncadrerSelectionnez{
+    width : 260px ;
+    height :430px ;
+}
+
+#divVideUne{
+    height: 20px;
+    width: 185px;
+    background-color: #efefef;
+}
+
+#divVideDeux{
+    height: 20px;
+    width: 86px;
+    background-color: #efefef;
+}
+
+#petitEncadrerSelectionnez:hover{
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+.hauteurInput{
+    height: 50px;
+    background-color: #efefef;
+}
+
+#selectionnezUneEpingle{
+    height: 340px;
+    width: 230px;
+    background-color: #efefef;
+}
+
+#BoutonPasserCreationAnnonce:hover{
+    background-color: #ddd;
+}
+
+.spanPageCreerAnnonce{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#encadrerSelectionnezUneEpingle{
+    height: 520px ;
+    width: 290px;
+}
+
+#encadrerEpingleRedirige{
+    width: 470px;
+    height: 140px;
+}
+
+#encadrerCocher{
+    width: 470px;
+    height: 220px;
+}
+
+#encadrerSponsoriser{
+    width: 260px;
+    height: 140px;
+}
+#encadrerpseudo{
+    width :260px ;
+    height :120px ;
+}
+
+/* page pseudo */
+.bordure{
+    border : 1px solid red ;
+}
+
+.tailleCouverture{
+    width : 660px ;
+    height : 370px ;
+}
+
+#boutonPagePseudo{
+    height: 40px;
+    background-color: #fff ;
+    margin-top: 150px;
+}
+
+#boutonPagePseudo:hover{
+    background-color: #efefef ;
+}
+
+#boutonCreer{
+    background-color: #e60023;
+    height: 48px;
+    width: 72px;
+}
+
+#boutonCreer:hover{
+    background-color: #a3081a;
+}
+
+.boutonPagePseudo{
+    height: 50px;
+    background-color: #efefef ;
+}
+
+.boutonPagePseudo:hover{
+    background-color: #ddd;
+}
+
+.LettrePseudo{
+    height: 120px;
+    width: 120px;
+    background-color: #efefef ;
+    border: 1px solid white ;
+    position :relative ;
+    top : 120px ;
+}
+
+.ecritureSousLigné{
+    border-bottom: 2px solid black;
+    height: 30px;
+}
+
+.simulationBtn{
+    padding: 5px;
+}
+
+.simulationBtn:hover{
+    background: #efefef;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#divAFaireApparaitre{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* page catalogue */
+#bouttonPageCatalogue{
+    height: 50px;
+    background-color: #efefef;
+}
+
+#decorationLink:hover{
+    text-decoration: underline;
+}
+
+.decorationLink:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.fondIcone{
+    background-color: #d0d0d0;
+}
+
+#boutonCreerEpingle{
+    width: 170px;
+    background-color: #efefef;
+}
+
+#boutonTesterProduit{
+    width: 240px;
+}
+
+#boutonTesterProduit:hover{
+    background-color: #ddd;
+}
+
+#inputEncadrerBleu{
+    border: 1px solid #d0d0d0 ;
+}
+
+.hauteurinput{
+    height: 50px;
+    border: 1px solid #d0d0d0;
+    background-color: #efefef;
+}
+
+.personnalisationParticuliere{
+    width: 500px;
+}
+
+.hauteurBouton{
+    height: 50px;
+    width:max-content;
+}
+
+.personnalisationLabel{
+    font-size: small;
+}
+
+.personnalisationSmall{
+    font-size:x-small;
+}
+
+/* pour affichage en tablette */
+@media screen and (max-width:780px) {
+    
+    /* body */
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* menu navigation */
+    nav{
+        text-align: center;
+    }
+    
+    #affichageMenu{
+        width: 75%;
+    }
+
+    /* rangee Carousel */
+    .rangeeCarouselAccordin{
+        width: 75%;
+    }
+
+
+    /* redimension de l'image */
+    img{
+        width: 300px;
+        height: 350px;
+    }
+
+    /* rangée pseudo */
+    #laRangeePseudo{
+        width: 75%;
+    }
+
+    #pseudo{
+        margin: auto;
+    }
+
+    #zero{
+        margin: auto;
+    }
+
+    /* taille du carousel avec l'accordéon */
+    .tailleReplier{
+        height: auto;
+        width: auto;
+    }
+    
+    .taille{
+        height: auto;
+        width: auto;
+    }
+
+    /* rangee performance */
+    #perfomance{
+        background:ghostwhite;  
+        height: auto;
+        width: 75%;
+    }
+
+    .redimensionRangeePerformance{
+        width: 90%;
+        height: auto;
+    }
+
+    /* rangee ressource */
+    .carte{
+        width: 328.5px;
+    }
+
+    .disposition{
+        width: 100%;
+    }
+
+    .disparition{
+        display: none;
+    }
+
+    /* vous avez besoin */
+    #derniereRange{
+        width: 75%;
+    }
+    
+    /* menu du bas */
+    #menuBas{
+        width: 75%;
+    }
+}
